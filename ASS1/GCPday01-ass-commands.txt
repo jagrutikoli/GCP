@@ -1,0 +1,28 @@
+﻿Commands for question 1
+gsutil mb -c standard -l us-east1 gs://jagruti-bucket1
+gsutil mb -c standard -l us-east1 gs://jagruti-bucket2
+gsutil cp file1.txt
+gsutil cp file1.txt gs://jagruti-bucket1
+gsutil cp -r gs://jagruti-bucket1/* gs://jagruti-bucket2/
+gsutil ls gs://jagruti-bucket2
+gsutil rm gs://jagruti-bucket2/**
+gsutil ls gs://jagruti-bucket2
+
+
+
+
+
+
+Commands for question 3
+gcloud compute instances create jagrutiq1-vm  --image ubuntu-1604-xenial-v20200108 --image-project ubuntu-os-cloud
+
+
+gcloud compute disks list
+
+
+gcloud compute disks resize jagruti-vm --zone=us-east1-b --size 50
+df -h
+lsblk
+sudo growpart /dev/sda 1
+sudo resize2fs /dev/sda1
+df -h
